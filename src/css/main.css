@@ -63,3 +63,15 @@ footer {
     text-align: center;
     color: white;
   }
+
+.restart {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.restart button{
+    margin: 50px auto 0;
+    padding: 15px;
+    border-radius: 15px;
+}
