@@ -13,7 +13,7 @@ const state = {
         currentTime: 60,
         lives:5,
         gameOver: false,
-        soundInit: new Audio(`./src/audios/audio-game.mp3`)
+        soundInit: null,
     },
     actions: {
         timerId: setInterval(randomSquareEnemy, 1000),
@@ -28,7 +28,8 @@ function playSound(audioName){
 }
 
 function startSoundInit(){
-    state.values.soundInit.volume=0.1;
+    state.values.soundInit = new Audio(`./src/audios/audio-game.mp3`);
+    state.values.soundInit.volume=0.05;
     state.values.soundInit.play();
 }
 
